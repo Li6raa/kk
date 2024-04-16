@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ФитнесЦентр.Главная_форма"
+        Title="ФитнесЦентр"> 
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical">
+        <DataGrid Name="DataGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="350" IsReadOnly="True" ItemsSource="{Binding Items}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Имя}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding Номер_телефона}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding Дата_рождения}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пол" Binding="{Binding Пол}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Скидка" Binding="{Binding Скидка}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        </StackPanel>
+    </StackPanel>
+</Window>
